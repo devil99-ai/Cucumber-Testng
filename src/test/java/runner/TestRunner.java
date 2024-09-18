@@ -9,7 +9,6 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features= {"src/test/java/Features"},
 		glue= {"src/test/java/StepDefinations"},
-		tags = "@viewBooking",
 		plugin= {"pretty","html:target/extendReport"})
 
 public class TestRunner {

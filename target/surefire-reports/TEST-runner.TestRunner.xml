@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.simplilearn.CucumberFrameworkForFlyAway.AppTest" time="0.015" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runner.TestRunner" time="0.365" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -58,15 +58,34 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="testApp" classname="com.simplilearn.CucumberFrameworkForFlyAway.AppTest" time="0.007">
-    <system-err><![CDATA[Sept 12, 2024 9:08:25 PM io.cucumber.core.feature.GluePath warnWhenWellKnownProjectSourceDirectory
-WARNING: Consider replacing glue path 'src/test/java/StepDefinations' with 'StepDefinations'.
-'
-The current glue path points to a source directory in your project. However cucumber looks for glue (i.e. step definitions) on the classpath. By using a package name you can avoid this ambiguity.
-Sept 12, 2024 9:08:26 PM io.cucumber.core.feature.GluePath warnWhenWellKnownProjectSourceDirectory
-WARNING: Consider replacing glue path 'src/test/java/StepDefinations' with 'StepDefinations'.
-'
-The current glue path points to a source directory in your project. However cucumber looks for glue (i.e. step definitions) on the classpath. By using a package name you can avoid this ambiguity.
-]]></system-err>
+  <testcase name="View Bookings scenario" classname="Validating Flyaway Workflow" time="0.099">
+    <error message="The step &apos;user is on fflyaway home page&apos; and 2 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Then(&quot;user is on fflyaway home page&quot;)&#10;public void user_is_on_fflyaway_home_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user clicks on your bookings&quot;)&#10;public void user_clicks_on_your_bookings() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;user able to see bookings&quot;)&#10;public void user_able_to_see_bookings() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'user is on fflyaway home page' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Then("user is on fflyaway home page")
+public void user_is_on_fflyaway_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user clicks on your bookings")
+public void user_clicks_on_your_bookings() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user able to see bookings")
+public void user_able_to_see_bookings() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+@viewBooking
+Scenario: View Bookings scenario     &amp#27;[90m# src/test/java/Features/flyaway.feature:25&amp#27;[0m
+  &amp#27;[33mThen &amp#27;[0m&amp#27;[33muser is on fflyaway home page&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser clicks on your bookings&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser able to see bookings&amp#27;[0m
+]]></system-out>
   </testcase>
 </testsuite>
